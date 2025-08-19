@@ -1,41 +1,95 @@
+/* Fuente gamer/tech */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap');
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   display: flex;
+  background: #0d0d0d;
+  color: #e0e0e0;
 }
+
+/* Sidebar estilo neón */
 .sidebar {
-  background: #007BFF;
-  color: white;
-  width: 250px;
+  background: linear-gradient(180deg, #111111, #1a1a1a);
+  border-right: 2px solid #00ffcc;
+  width: 240px;
   padding: 20px;
   text-align: center;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 0 0 20px #00ffcc;
 }
+
 .sidebar img {
   width: 120px;
   border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #00ffcc;
+  box-shadow: 0 0 15px #00ffcc;
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin-top: 30px;
 }
+
 .sidebar ul li {
-  margin: 15px 0;
+  margin: 25px 0;
 }
+
 .sidebar a {
-  color: white;
+  color: #00ffcc;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  transition: 0.3s;
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
 }
+
+.sidebar a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 8px #ff00ff, 0 0 15px #ff00ff;
+}
+
+/* Contenido principal */
 .content {
+  margin-left: 260px;
   padding: 40px;
   flex: 1;
 }
+
 h1 {
-  font-size: 36px;
+  font-size: 42px;
   margin: 0;
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
 }
+
 h2 {
   margin-top: 40px;
-  color: #333;
+  color: #ff00ff;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 8px #ff00ff, 0 0 15px #ff00ff;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Efecto en links */
+a {
+  color: #00ffcc;
+}
+
+a:hover {
+  color: #ff00ff;
 }
